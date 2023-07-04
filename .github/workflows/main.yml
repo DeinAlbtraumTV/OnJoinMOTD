@@ -163,8 +163,8 @@ jobs:
         if: needs.build.result == 'failure' || needs.test.result == 'failure' || needs.release.result == 'failure'
         uses: appleboy/discord-action@0.0.3
         with:
-          webhook_id: ${{ secrets.DISCORD_WEBHOOK_ID }}
-          webhook_token: ${{ secrets.DISCORD_WEBHOOK_TOKEN }}
+          webhook_id: ${{ secrets.WEBHOOK_ID }}
+          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
           color: "#FF0000"
           username: "OnJoinMotd Release Bot"
           message: >
