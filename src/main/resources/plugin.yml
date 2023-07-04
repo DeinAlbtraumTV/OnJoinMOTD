@@ -2,19 +2,7 @@ main: ${PACKAGE}.${NAME}
 name: ${NAME}
 version: "${VERSION}"
 api-version: "1.16"
-author: AUTHOR
-description: DESCRIPTION
+author: DeinAlbtraumTV
+description: Sends a motd on playerjoin
 commands:
-  ex:
-    description: Base command for EXAMPLE
-    usage: "For a list of commands, type /ex help"
-    aliases: example
 permissions:
-  example.test:
-    description: DESCRIPTION
-    default: true
-  example.*:
-    description: Grants all other permissions
-    default: false
-    children:
-      example.test: true

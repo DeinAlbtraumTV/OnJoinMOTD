@@ -1,4 +1,4 @@
-package com.crimsonwarpedcraft.exampleplugin;
+package de.gamewithfire.onjoinmotd;
 
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author Copyright (c) Levi Muniz. All Rights Reserved.
  */
-public class ExamplePluginTest {
+public class OnJoinMotdTest {
 
   @Test
   public void onEnable() {
