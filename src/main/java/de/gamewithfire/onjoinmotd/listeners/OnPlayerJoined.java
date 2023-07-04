@@ -20,8 +20,15 @@ public class OnPlayerJoined implements Listener {
     this.config = plugin.getConfig();
   }
 
+  /**
+   * PlayerJoinEvent Listener.
+   */
   @EventHandler(priority = EventPriority.NORMAL)
   public void onPlayerJoinEvent(PlayerJoinEvent event) {
-    event.getPlayer().sendMessage(Component.text((String) config.get("motd"), NamedTextColor.GOLD));
+    String motd = (String) config.get("motd");
+
+    if (motd != null) {
+      event.getPlayer().sendMessage(Component.text(motd, NamedTextColor.GOLD));
+    }
   }
 }
